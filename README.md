@@ -1,5 +1,9 @@
 # Segmentation-fault-core-dumped-
 try to run python but got the error: Segmentation fault (core dumped)
+the main reason is that you have installed many things in your home version python, try to keep your ~/.local/lib/python*/site-packages clean: python -sm pip or export PYTHONNOUSERSITE=1
+otherwise when you will use the libraries from home instead of conda_env even though you run your software in the build conda env, which will cause conflicts and so on...(mess/chiaos)
+
+the way to solve this is put PYTHONNOUSERSITE=1 python xxx.py -h to aviod the library or anything from your home
 
 
 https://pypi.org/project/pip-utils/ reads:
