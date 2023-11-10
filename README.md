@@ -6,7 +6,7 @@ otherwise when you will use the libraries from home instead of conda_env even th
 
 the way to solve this is put PYTHONNOUSERSITE=1 python xxx.py -h to aviod the library or anything from your home
 
-normarlly, the reason you have many things  ~/.local/lib/python*/site-packages is that you use pip install packages 
+normarlly, the reason you have many things  ~/.local/lib/python*/site-packages is that you use : pip install packages
 
 https://pypi.org/project/pip-utils/ reads:
 
