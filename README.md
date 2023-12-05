@@ -1,4 +1,4 @@
-# Segmentation-fault-core-dumped-
+# pyhton runing: Segmentation-fault-core-dumped error
 try to run python but got the error: Segmentation fault (core dumped)
 
 the main reason is that you have installed many things in your home version python, try to keep your ~/.local/lib/python*/site-packages clean: python -sm pip or export PYTHONNOUSERSITE=1
